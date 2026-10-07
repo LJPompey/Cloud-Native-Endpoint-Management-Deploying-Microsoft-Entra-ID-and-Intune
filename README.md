@@ -10,9 +10,9 @@ This repository documents the deployment of a cloud-managed enterprise environme
 
 ---
 
-### 🖥️ Technologies & Infrastructure
+## 🖥️ Technologies & Infrastructure
 
-## 🪪 Identity Provider: Microsoft Entra ID
+### 🪪 Identity Provider: Microsoft Entra ID
 
 MDM / UEM: Microsoft Intune
 
@@ -22,7 +22,7 @@ Target Endpoint: Windows 11 Pro (VMware/VirtualBox via NAT)
 
 Deployment Tools: Microsoft Win32 Content Prep Tool (.intunewin)
 
-## 📊 Project Architecture
+### 📊 Project Architecture
 
 Identity Synchronization: Local Active Directory users are continuously synced to Entra ID via Azure AD Connect.
 
@@ -32,7 +32,7 @@ Application Delivery: Google Chrome is packaged and pushed silently to the endpo
 
 Security Enforcement: A device-level administrative template restricts USB storage access to prevent data exfiltration.
 
-## 🪜 Implementation Steps
+### 🪜 Implementation Steps
 
 Phase 1: Environment Preparation: Provisioned a Microsoft 365 E3 trial tenant and established hybrid identity synchronization. Assigned E3 licensing to synchronized user accounts to enable Intune enrollment capabilities.
 
@@ -42,7 +42,7 @@ Phase 3: Zero-Trust Hardware Policy: Utilized the Intune Settings Catalog to dep
 
 Phase 4: Win32 App Deployment: Packaged the Google Chrome Standalone Enterprise .msi installer into an .intunewin file using the command line. Configured Intune detection rules using the MSI product code for silent background installation.
 
-## ⚙️ Troubleshooting & Resolutions
+### ⚙️ Troubleshooting & Resolutions
 
 400 Bad Request on Sync: Endpoint rejected Intune synchronization due to a missing cloud license on the synced user account. Fix: Assigned the M365 E3 license, forced a complete sign-out on the endpoint to flush the cached token, and successfully pulled a fresh authentication token upon sign-in.
 
