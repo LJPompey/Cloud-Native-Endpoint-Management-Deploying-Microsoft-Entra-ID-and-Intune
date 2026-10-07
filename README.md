@@ -6,7 +6,7 @@ This repository documents the deployment of a cloud-managed enterprise environme
 
 [Read the Full Technical Breakdown on Medium](https://medium.com/@pompey.lamont01/bridging-the-gap-deploying-a-cloud-native-endpoint-management-lab-with-microsoft-intune-3c6229b57e1e)
 
-<div/>
+</div>
 
 ---
 
