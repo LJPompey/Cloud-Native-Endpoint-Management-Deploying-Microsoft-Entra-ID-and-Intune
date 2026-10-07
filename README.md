@@ -2,11 +2,13 @@
   
 # ☁️ Cloud-Native-Endpoint-Management-Deploying-Microsoft-Entra-ID-and-Intune
 
-## Objective
 This repository documents the deployment of a cloud-managed enterprise environment using Microsoft Entra ID and Microsoft Intune. Built as an extension to my local Automated SOC Pipeline (Wazuh, Sysmon, and TheHive), this project demonstrates modern unified endpoint management (UEM), automated zero-touch application deployment, and zero-trust hardware security enforcement on a Windows 11 virtual machine.
 
----
+[Read the Full Technical Breakdown on Medium](https://medium.com/@pompey.lamont01/bridging-the-gap-deploying-a-cloud-native-endpoint-management-lab-with-microsoft-intune-3c6229b57e1e)
+
 <div/>
+
+---
 
 ### 🖥️ Technologies & Infrastructure
 
